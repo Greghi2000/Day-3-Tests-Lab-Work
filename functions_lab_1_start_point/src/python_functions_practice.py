@@ -55,11 +55,17 @@ def number_to_short_month_name(num):
 def volume_of_cube(len, h, w):
     return len*w*h
 
+# def reverse_str(str):
+#     empty_list = []
+#     empty_str = ""
+#     for char in str:
+#         empty_list.append(char)
+#     empty_list.reverse()
+#     empty_str.join(empty_list)
+#     return empty_str
+
 def reverse_str(str):
-    empty_list = []
-    empty_str = ""
-    for char in str:
-        empty_list.append(char)
-    empty_list.reverse()
-    empty_str.join(empty_list)
-    return empty_str
+    return str[::-1]
+
+def fahrenheit_to_celsius(far):
+    return ((far-32)*5)/9
